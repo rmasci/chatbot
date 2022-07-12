@@ -20,7 +20,7 @@ chatbot]$  go run *.go -b cloudgenie -h 10.1.1.130 -p 8888 -r rive
 
 ```
 
-This needs a lot of work, especially in the Javascript area. I am bad enough at Go, I have to look up how to spell Javascript.
+This needs a lot of work, especially in the Javascript area. I don't speak Javascript.
 
 When running you can ask the 'chatbot' questions. You'll need my tcpscan https://github.com/rmasci/tcpscan if you want to run the rivescript that executes a LocalCommand.
 
