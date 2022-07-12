@@ -1,0 +1,8 @@
++ how are you today
+- I am fine, and yourself?
+
++ tcpscan *
+- LocalCommand tcpscan <star1>
+
++ what is the current date
+- LocalCommand date

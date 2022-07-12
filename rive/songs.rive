@@ -1,0 +1,85 @@
++ sing me a song
+- Yesterday,<br>
+^ All those backups seemed a waste of pay. \n<br>
+^ Now my database has gone away. \n<br>
+^ Oh I believe in yesterday. \n<br>
+- What do you call a computer that sings?
+^ A Dell!!!
+^ Toss it in the river, and it will be "rolling in the deep"
+- OK.. this is the heater tool theme song.\n<br>
+^ {@sing me the heater tool song}
+- OK... This is the AT&T "I got my bonus today" song.
+^ {@sing me the bonus song}
+
++ sing me the heater tool song
+- OK.. this is the heater tool theme song.\n<br>
+^Roll out <br>
+^Roll out the magical mystery tool \n<br>
+^Roll out <br>
+^Roll out the magical mystery tool \n<br>
+^Roll out (And that's an invitation)<br>
+^Roll out the magical mystery tool\n<br>
+^Roll out (let heater make reservations)<br>
+^Roll out the magical mystery tool \n<br>
+^The magical mystery tool is making vms today \n<br>
+^Heater configures ok\n<br>
+^Make vms today\n<br>
+
++ sing me the [*] bonus song
+- <br>Sittin on the dock of eBay<br>
+^ Watchin my bonus get blown away<br>
+^ Sittin on the dock of eBay<br>
+^ Wastin mi---i-i-i-i-ine!<br>
+^ (Apologies to Otis Redding)
+
++ tell me a joke
+- One day an iPhone 6 and Samsung Galaxy  walk in to a bar and the iPhone says to S8...\n<br> {weight=30}
+^ 1101101001101010011010101001001\n<br>
+- If at first you don't succeed; call it version 1.0.<br>
+- My software never has bugs. It just develops random features.<br>
+- I would love to change the world, but they won't give me the source code.<br>
+- The code that is the hardest to debug is the code that you know cannot possibly be wrong.<br>
+- Beware of programmers that carry screwdrivers.<br>
+- Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.<br>
+- The beginning of the programmer's wisdom is understanding the difference between getting program to run and having a runnable program.<br>
+- I'm not anti-social; I'm just not user friendly.<br>
+- Hey! It compiles! Put it in the 1902!<br>
+- If Ruby and Python is not and Go Language is the answer, you don't understand the question.<br>
+- The more I Go, the less I C++.<br>
+- If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime.<br>
+- Programmers are tools for converting caffeine into code.<br>
+- Enter any 11-digit prime number to continue.<br>
+- E-mail returned to sender, insufficient voltage.<br>
+- Black holes are where God divided by zero.<br>
+- If I wanted a warm fuzzy feeling, Id antialias my graphics!<br>
+- SUPERCOMPUTER: what it sounded like before you bought it.<br>
+- Linus Torvalds: Real men don't use backups, they post their stuff on a public ftp server and let the rest of the world make copies.<br>
+- There are three kinds of people: those who can count and those who can't.<br>
+- Latest survey shows that 3 out of 4 people make up 75% of the world's population.<br>
+- Hand over the calculator, friends don't let friends derive drunk.<br>
+- An infinite crowd of mathematicians enters a bar. The first one orders a pint, the second one a half pint, the third one a quarter pint "I understand", says the bartender and pours two pints.<br>
+- There are only 10 types of people in the world: those that understand binary and those that don't.<br>
+- Computers make very fast, very accurate mistakes.<br>
+- Be nice to the nerds, for all you know they might be the next Bill Gates!<br>
+- Artificial intelligence usually beats real stupidity.<br>
+- To err is human -- and to blame it on a computer is even more so.<br>
+- CAPS LOCK -- Preventing Login Since 1980.<br>
+- The truth is out there. Anybody got the URL?<br>
+- Some things Man was never meant to know. For everything else, there's Google.<br>
+- The box said Requires Windows 10 or better. So I bought a Mac.<br>
+- UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.<br>
+- In a world without fences and walls, who needs Gates and Windows?<br>
+- Bugs come in through open Windows.<br>
+- Penguins love cold, they wont survive the sun.<br>
+- Unix is user friendly. It's just selective about who its friends are.<br>
+- Failure is not an option. It comes bundled with your Microsoft product.<br>
+- Windows 10 is the only OS that has caused me to beat a piece of hardware to death with my bare hands.<br>
+- Microsoft: "You've got questions. We've got dancing paperclips.<br>
+- Erik Naggum: Microsoft is not the answer. Microsoft is the question. NO is the answer.<br>
+- Windows isn't a virus, viruses do something.<br>
+- Computers are like air conditioners: they stop working when you open Windows.<br>
+- Mac users swear by their Mac, PC users swear at their PC.<br>
+-C://dos<br>
+^C://dos.run<br>
+^run.dos.run<br>
+

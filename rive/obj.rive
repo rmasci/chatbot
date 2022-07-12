@@ -1,0 +1,7 @@
++ what [*] ip address
+* IP address is: <call>myip</call>
+
+// The object macro that fetches an IP address.
+> object myip perl
+   print "Hello";
+< object

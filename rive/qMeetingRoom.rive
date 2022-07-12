@@ -1,0 +1,5 @@
++ join meeting *
+- QAddMeetRoom <star1>
+
++ leave meeting *
+- QDelMeetRoom <star1>
