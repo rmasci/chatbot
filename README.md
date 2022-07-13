@@ -44,26 +44,26 @@ When typed to the chatbot it looks like this:
 
 For the tcpscan example above, the rivescript looks like this:
 
-```rivescript    
+```rivescript
 + tcpscan *
 - LocalCommand /usr/local/bin/tcpscan <star1>
 ```
 
 When a user types: chatbot tcpscan https://www.google.com -s it uses a <star1>, so that any options to tcpscan can be passed along. You could also hard code those:
 
-```rivescript 
+```rivescript
 + scan yahoo
 - LocalCommand /usr/local/bin/tcpscan https://www.yahoo.com -s
 ```
 
 Result:
 
-```text 
+```text
 13:46 Rich: chatbot scan yahoo
 13:46 chatbot: @Rich,
-+------------------+---------+-------------+-------------+--------------+
-|          Address |    Port |      Status |         TCP |          SSL |
-+==================+=========+=============+=============+==============+
-|    www.yahoo.com |     443 |    Filtered |    500.20ms |    Failed -2 |
-+------------------+---------+-------------+-------------+--------------+
++------------------+---------+-----------+-------------+---------------------------+
+|          Address |    Port |    Status |         TCP |                       SSL |
++==================+=========+===========+=============+===========================+
+|    www.yahoo.com |     443 |      Open |    277.36ms |    TLS v1.2 / OK: 28 days |
++------------------+---------+-----------+-------------+---------------------------+
 ```
