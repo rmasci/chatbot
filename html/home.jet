@@ -6,15 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .chatbox {
             outline: 1px solid silver;
             min-height: 500px;
+            max-height: 500px;
             padding: 0.5em;
-            scroll-behavior: auto;
             wrap-option: auto;
-            scrollbar-3dlight-color: #1e2125;
+            overflow-x: scroll;
+            overflow-y: scroll;
         }
     </style>
 </head>
@@ -62,20 +63,21 @@
             <!-- Button -->
             <a href="javascript:void(0);" class="btn btn-outline-secondary" id="sendBtn">Send Message</a>
             <input type="hidden" name="action" id="action">
-
+            <div id="status" class="mt-2" float-end>
+            </div>
         </div>
         </div>
     </div>
 </div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
 <!--
 <script src="file:///js/boostrap.js">
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 -->
-
+<script src="/static/reconnecting-websocket.min.js"></script>
 <script>
     let socket = null;
     let o = document.getElementById("output");
@@ -90,17 +92,21 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        socket = new WebSocket("ws://{{host}}/ws");
-
+        socket = new ReconnectingWebSocket("ws://{{host}}/ws", null, {debug: true, reconnectInterval: 3000});
+        const offline = `<span class="badge bg-danger">Not Connected</span>`
+        const online = `<span class="badge bg-success">Connected</span>`
+        let statusDiv = document.getElementById("status");
         socket.onopen = () => {
             let jsonData = {};
             jsonData["action"] = "listusers";
             socket.send(JSON.stringify(jsonData));
             console.log("Successfully connected");
+            statusDiv.innerHTML = online;
         }
 
         socket.onclose = () => {
             console.log("connection closed");
+            statusDiv.innerHTML = offline;
         }
 
         socket.onerror = error => {
