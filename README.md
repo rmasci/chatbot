@@ -41,3 +41,29 @@ In this version, if the first word of the rivescript response is LocalCommand th
 When typed to the chatbot it looks like this:
 
 ![](img/chat.png)
+
+For the tcpscan example above, the rivescript looks like this:
+
+```rivescript    
++ tcpscan *
+- LocalCommand /usr/local/bin/tcpscan <star1>
+```
+
+When a user types: chatbot tcpscan https://www.google.com -s it uses a <star1>, so that any options to tcpscan can be passed along. You could also hard code those:
+
+```rivescript 
++ scan yahoo
+- LocalCommand /usr/local/bin/tcpscan https://www.yahoo.com -s
+```
+
+Result:
+
+```text 
+13:46 Rich: chatbot scan yahoo
+13:46 chatbot: @Rich,
++------------------+---------+-------------+-------------+--------------+
+|          Address |    Port |      Status |         TCP |          SSL |
++==================+=========+=============+=============+==============+
+|    www.yahoo.com |     443 |    Filtered |    500.20ms |    Failed -2 |
++------------------+---------+-------------+-------------+--------------+
+```
