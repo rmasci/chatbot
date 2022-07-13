@@ -7,7 +7,7 @@ This is a small program, written mainly with help from a Udemy class I am taking
 You should be able to clone this directory and run it. 
 
 ```bash
-go run *.go -b cloudgenie -h 10.1.1.130 -p 8888 -r rive
+go run *.go -b chatbot -h 10.1.1.130 -p 8888 -r rive
 ```
 
 When Started the console looks like this:
