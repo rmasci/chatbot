@@ -17,7 +17,6 @@ chatbot]$  go run *.go -b cloudgenie -h 10.1.1.130 -p 8888 -r rive
 2022/07/12 17:43:39 Starting channel listener
 2022/07/12 17:43:39 Starting Web Server On Port 8080
 2022/07/12 17:43:39 rivescript initialized
-
 ```
 
 This needs a lot of work, especially in the Javascript area. I don't speak Javascript.
@@ -25,6 +24,10 @@ This needs a lot of work, especially in the Javascript area. I don't speak Javas
 When running you can ask the 'chatbot' questions. You'll need my tcpscan https://github.com/rmasci/tcpscan if you want to run the rivescript that executes a LocalCommand.
 
 ![](img/chatbotDemo.png)
+
+Note: tcpscan can be downloaded from:
+
+[GitHub - rmasci/tcpscan: Verify TCP connectivity.](https://github.com/rmasci/tcpscan)
 
 ## LocalCommand
 
